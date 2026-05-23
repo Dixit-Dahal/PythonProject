@@ -59,4 +59,45 @@ cart2 = {'apple', 'orange'}
 
 # print(cart)
 
+# # Dictionary
 
+# student_records = {}
+
+# student_records['Ram'] = 85
+
+# student_records.update({'Hari':99, 'Shyam':80})
+
+# Nested dictionary:
+
+student_records = {'Ram' : {'math' : [99, 95, 94], 'science' : 88},       # Can add list as values as well
+                    'Shyam' : {'math' : 88, 'science' : 77}}
+
+# student_records.pop('Ram')
+# student_records.popitem()
+
+# print(student_records)
+
+# for i in student_records:           # Same as when using .keys()
+#     print(i)
+
+# for i,j in student_records.items():           # to get both keys and values
+#     print(i, ':', j)
+
+# for i in student_records.keys():    # Prints only the keys
+#     print(i)
+
+# for i in student_records.values():  # Prints only the values
+#     print(i)
+
+# for i in student_records.items():   # Prints as a key value pair in tuple format
+#     print(i)
+
+print(student_records['Ram'])   # prints only the value
+
+s_records = student_records.get('Hari')     # Avoids error and returns none if there is no key
+
+s_records = student_records.get('Ram', 'users not found')     # Avoids error and returns users not found if there is no key.
+# If there is a key, then the last part doesn't run
+
+print(student_records['Ram']['math'])      # To access nested dictionary values
+print(student_records['Ram']['math'][1])      # To access nested dictionary list values
