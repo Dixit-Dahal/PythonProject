@@ -86,40 +86,72 @@
 
 
 
-for row in range(6):
-    for column in range(58):
-        if column == 0 or column == 7 or column == 30 or column == 41 or column == 44 or column == 53:
-            print('*', end=' ')
+# for row in range(6):
+#     for column in range(58):
+#         if column == 0 or column == 7 or column == 30 or column == 41 or column == 44 or column == 53:
+#             print('*', end=' ')
         
-        elif (column == 35 or column == 39 or column == 47 or column == 51) and row != 0:
-            print('*', end=' ')
+#         elif (column == 35 or column == 39 or column == 47 or column == 51) and row != 0:
+#             print('*', end=' ')
 
-        elif (column == 1 or column == 2 or column == 31 or column == 32) and (row == 0 or row == 5):
-            print('*', end=' ')
+#         elif (column == 1 or column == 2 or column == 31 or column == 32) and (row == 0 or row == 5):
+#             print('*', end=' ')
         
-        elif (column == 3 or column == 20 or column == 26 or column == 33)  and (row != 0 and row != 5):
-            print('*', end=' ')
+#         elif (column == 3 or column == 20 or column == 26 or column == 33)  and (row != 0 and row != 5):
+#             print('*', end=' ')
 
-        elif (column == 5 or column == 6 or column == 8 or column == 9 or column == 11 or column == 16 or column == 18 or column == 19 or column == 20 or column == 21 or column == 22 or column == 26) and (row == 0 or row == 5):
-            print('*', end=' ')
+#         elif (column == 5 or column == 6 or column == 8 or column == 9 or column == 11 or column == 16 or column == 18 or column == 19 or column == 20 or column == 21 or column == 22 or column == 26) and (row == 0 or row == 5):
+#             print('*', end=' ')
         
-        elif (column == 12 or column == 15) and (row == 1 or row == 4):
-            print('*', end=' ')
+#         elif (column == 12 or column == 15) and (row == 1 or row == 4):
+#             print('*', end=' ')
 
-        elif (column == 13 or column == 14) and (row == 2 or row == 3):
-            print('*', end=' ')
+#         elif (column == 13 or column == 14) and (row == 2 or row == 3):
+#             print('*', end=' ')
         
-        elif (column == 36 or column == 37 or column == 38 or column == 48 or column == 49 or column == 50) and (row == 0 or row == 3):
-            print('*', end=' ')
+#         elif (column == 36 or column == 37 or column == 38 or column == 48 or column == 49 or column == 50) and (row == 0 or row == 3):
+#             print('*', end=' ')
         
-        elif (column == 24 or column == 25 or column == 27 or column == 28) and (row == 0):
-            print('*', end=' ')
+#         elif (column == 24 or column == 25 or column == 27 or column == 28) and (row == 0):
+#             print('*', end=' ')
 
-        elif (column == 42 or column == 43) and row == 2:
-            print('*', end = ' ')
+#         elif (column == 42 or column == 43) and row == 2:
+#             print('*', end = ' ')
 
-        elif (column == 54 or column == 55 or column == 56) and row == 5:
-            print('*', end = ' ')
-        else:
-            print(end='  ')
-    print()
+#         elif (column == 54 or column == 55 or column == 56) and row == 5:
+#             print('*', end = ' ')
+#         else:
+#             print(end='  ')
+#     print()
+
+# Ratings = ['4+', '9+', '12+', '17+', '4+', '12+', '4+', '9+', '17+', '12+', '4+', '17+']
+
+# content_ratings = {}
+
+# for i in Ratings:
+#     if i in content_ratings:
+#         content_ratings[i] += 1
+#     else:
+#         content_ratings[i] = 1
+
+# print(content_ratings)
+
+
+# password = 'p@ssw0rd'
+# failed_attempts = 3
+
+# for i in range(3):
+#     u_password = input('Enter your password: ')
+#     if u_password == password:
+#         print('Access Granted')
+#         break
+    
+#     elif failed_attempts == 0:
+#         print('Access Blocked!')
+#         break
+
+#     else:
+#         failed_attempts -= 1
+#         print(f'Access Denied, {failed_attempts} attempts left')
+        
+
